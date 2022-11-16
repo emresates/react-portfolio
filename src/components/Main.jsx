@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
@@ -5,6 +6,7 @@ import { LogoComponent } from "../subComponents/LogoComponent";
 import PowerButton from "../subComponents/PowerButton";
 import { SocialIcons } from "../subComponents/SocialIcons";
 import { YingYang } from "./AllSvgs";
+import Introduction from "./Introduction";
 
 const MainContainer = styled.div`
   background: ${(props) => props.theme.body};
@@ -47,7 +49,7 @@ const Blog = styled(NavLink)`
 `;
 
 const Work = styled(NavLink)`
-  color: ${(props) => props.theme.text};
+  color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   position: absolute;
   top: 50%;
   left: calc(1rem + 2vw);
@@ -68,7 +70,7 @@ const BottomBar = styled.div`
 `;
 
 const About = styled(NavLink)`
-  color: ${(props) => props.theme.text};
+  color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   text-decoration: none;
   z-index: 1;
 `;
@@ -115,11 +117,14 @@ const Center = styled.button`
 
 const DarkDiv = styled.div`
   position: absolute;
+  background-color: #000;
   top: 0;
   bottom: 0;
   right: 50%;
-  width: 100%;
-  height: 100%;
+  width: ${(props) => (props.click ? "50%" : "0")};
+  height: ${(props) => (props.click ? "100%" : "0")};
+  z-index: 1;
+  transition: height 0.5s ease, width 1s ease 0.5s;
 `;
 
 const Main = () => {
@@ -129,11 +134,11 @@ const Main = () => {
 
   return (
     <MainContainer>
+      <DarkDiv click={click} />
       <Container>
         <PowerButton />
-        <LogoComponent />
-        <SocialIcons />
-        <DarkDiv click={click} />
+        <LogoComponent theme={click ? "dark" : "light"} />
+        <SocialIcons theme={click ? "dark" : "light"} />
         <Center click={click}>
           <YingYang
             onClick={() => handleClick()}
@@ -145,27 +150,38 @@ const Main = () => {
         </Center>
 
         <Contact href="mailto:emresates@outlook.com" target="_blank">
-          <h2>Say Hi...</h2>
+          <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            Say Hi...
+          </motion.h2>
         </Contact>
 
         <Blog to="/blog">
-          <h2>Blog</h2>
+          <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            Blog
+          </motion.h2>
         </Blog>
 
-        <Work to="/work">
-          <h2>Work</h2>
+        <Work to="/work" click={click}>
+          <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            Work
+          </motion.h2>
         </Work>
 
         <BottomBar>
-          <About to="/about">
-            <h2>About</h2>
+          <About to="/about" click={click}>
+            <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              About
+            </motion.h2>
           </About>
 
           <Skills to="/skills">
-            <h2>Skills</h2>
+            <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              Skills
+            </motion.h2>
           </Skills>
         </BottomBar>
       </Container>
+      {click ? <Introduction click={click} /> : null}
     </MainContainer>
   );
 };
