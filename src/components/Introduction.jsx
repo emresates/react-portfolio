@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import Me from "../assets/Images/profile-img.png";
 
+// Styles
 const Box = styled(motion.div)`
   position: absolute;
   left: 50%;
@@ -65,6 +66,7 @@ const Text = styled.div`
   }
 `;
 
+// Main Function
 function Introduction() {
   return (
     <Box

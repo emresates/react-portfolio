@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import { AnchorSolid, LinkSolid } from "../components/AllSvgs";
 
+// Styles
 const Container = styled.div`
   position: relative;
 `;
@@ -27,20 +28,19 @@ const PreDisplay = styled.div`
   right: 2rem;
 `;
 
+// Main Function
 function AnchorComponent(props) {
   const ref = useRef(null);
   const hiddenRef = useRef(null);
 
   useEffect(() => {
+
     const handleScroll = () => {
       let scrollPosition = window.pageYOffset;
       let windowSize = window.innerHeight;
       let bodyHeight = document.body.offsetHeight;
-
       let diff = Math.max(bodyHeight - (scrollPosition + windowSize));
-
       let diffP = (diff * 100) / (bodyHeight - windowSize);
-
       ref.current.style.transform = `translateY(${-diffP}%)`;
 
       if (window.pageYOffset > 5) {

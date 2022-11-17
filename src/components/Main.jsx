@@ -5,9 +5,10 @@ import styled, { keyframes } from "styled-components";
 import { LogoComponent } from "../subComponents/LogoComponent";
 import PowerButton from "../subComponents/PowerButton";
 import { SocialIcons } from "../subComponents/SocialIcons";
-import { YingYang } from "./AllSvgs";
+import { ReactLogo } from "./AllSvgs";
 import Introduction from "./Introduction";
 
+// Styles
 const MainContainer = styled.div`
   background: ${(props) => props.theme.body};
   width: 100vw;
@@ -127,8 +128,9 @@ const DarkDiv = styled.div`
   transition: height 0.5s ease, width 1s ease 0.5s;
 `;
 
+// Main Function
 const Main = () => {
-  const [click, setClick] = useState(false);
+  const [click, setClick] = useState();
 
   const handleClick = () => setClick(!click);
 
@@ -140,7 +142,7 @@ const Main = () => {
         <LogoComponent theme={click ? "dark" : "light"} />
         <SocialIcons theme={click ? "dark" : "light"} />
         <Center click={click}>
-          <YingYang
+          <ReactLogo
             onClick={() => handleClick()}
             width={click ? 120 : 200}
             height={click ? 120 : 200}
@@ -150,32 +152,87 @@ const Main = () => {
         </Center>
 
         <Contact href="mailto:emresates@outlook.com" target="_blank">
-          <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <motion.h2
+            initial={{
+              y: -200,
+              transition: { type: "spring", duration: 1.5, delay: 1 },
+            }}
+            animate={{
+              y: 0,
+              transition: { type: "spring", duration: 1.5, delay: 1 },
+            }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
             Say Hi...
           </motion.h2>
         </Contact>
 
         <Blog to="/blog">
-          <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <motion.h2
+            initial={{
+              y: -200,
+              transition: { type: "spring", duration: 1.5, delay: 1 },
+            }}
+            animate={{
+              y: 0,
+              transition: { type: "spring", duration: 1.5, delay: 1 },
+            }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
             Blog
           </motion.h2>
         </Blog>
 
         <Work to="/work" click={click}>
-          <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <motion.h2
+            initial={{
+              y: -200,
+              transition: { type: "spring", duration: 1.5, delay: 1 },
+            }}
+            animate={{
+              y: 0,
+              transition: { type: "spring", duration: 1.5, delay: 1 },
+            }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
             Work
           </motion.h2>
         </Work>
 
         <BottomBar>
           <About to="/about" click={click}>
-            <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <motion.h2
+              initial={{
+                y: 200,
+                transition: { type: "spring", duration: 1.5, delay: 1 },
+              }}
+              animate={{
+                y: 0,
+                transition: { type: "spring", duration: 1.5, delay: 1 },
+              }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
               About
             </motion.h2>
           </About>
 
           <Skills to="/skills">
-            <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <motion.h2
+              initial={{
+                y: 200,
+                transition: { type: "spring", duration: 1.5, delay: 1 },
+              }}
+              animate={{
+                y: 0,
+                transition: { type: "spring", duration: 1.5, delay: 1 },
+              }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
               Skills
             </motion.h2>
           </Skills>

@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { PowerBtn } from "../components/AllSvgs";
 
+// Styles
 const Power = styled.button`
   position: fixed;
   top: 2rem;
@@ -36,6 +37,7 @@ const Power = styled.button`
   }
 `;
 
+// Main Function
 const PowerButton = () => {
   return (
     <Power>

@@ -1,61 +1,62 @@
 export const Work = [
-    {
-        id:1,
-        name:"Agency Landing Page",
-        description:"It is build on top of the React JS, with styledComponents and GSAP for smooth scrolling animations.",
-        tags:["react","gsap","styledComponents"],
-        
-        demo:"https://agency-website-eta.vercel.app/",
-        github:"https://github.com/codebucks27/Agency-website"
-    },
-    {
-        id:2,
-        name:"Job listing website",
-        description:"A Job listing website build in ReactJS. With searching and filtering functionalities.",
-        tags:["react","sass"],
-        
-        demo:"http://react-job-listing-website.codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/react-job-listing-website"
-        
-    },
-    {
-        id:3,
-        name:"Dev.to Clone",
-        description:"A clone of Dev.to build using ReactJS. With realtime fetching of articles from dev.to using API.",
-        tags:["react","api","sass"],
-        
-        demo:"http://devto-clone-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/devto-clone"
-    },
-    {
-        id:4,
-        name:"Sidebar Menu",
-        description:"A cool looking sidebar menu build using ReactJS and styledComponents.It has really smooth animations.",
-        tags:["react","styledComponents","react-router"],
-        
-        demo:"https://react-sidebar.vercel.app/",
-        github:"https://github.com/codebucks27/react-sidebar"
-       
-    },{
-        id:5,
-        name:"Todo App(React + Redux)",
-        description:"A todo app build using Redux-toolkit and framer-motion for smooth animations.",
-        tags:["react","redux","framer-motion"],
-        
-        demo:"http://react-redux-todo-app-git-main-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/React-Redux-Todo-App"
-        
-    },
-    {
-        id:6,
-        name:"Responsive Navigation Menu",
-        description:"A reponsive navbar menu component in ReactJS with react-router functionalities. Built from scratch.",
-        tags:["react","react-router","css"],
-        
-        demo:"http://react-responsive-navbar-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/React-responsive-navbar"
-        
-    },
-    
-  
-] 
+  {
+    id: 1,
+    name: "Responsive Travel Agency Page",
+    description:
+      "It is build on top of the React JS, with Formik and React Router Dom.",
+    tags: ["react", "formik", "react-router-dom"],
+
+    demo: "https://trippy-travel-react.netlify.app",
+    github: "https://github.com/emresates/React-travel-agency-project",
+  },
+  {
+    id: 2,
+    name: "Movie App",
+    description:
+      "A Movie App build in Html,Scss and Javascript. With using the TMDB API",
+    tags: ["javascript", "scss", "api"],
+
+    demo: "https://movie-website-tmdb-api.netlify.app",
+    github: "https://github.com/emresates/movie-app-with-api",
+  },
+  {
+    id: 3,
+    name: "Winter Resort Website",
+    description:
+      "Winter resort page made by using vanilla.js, html, scss. A good slider and transition effects available for each page. Built from scratch.",
+    tags: ["gsap", "slider", "scss"],
+
+    demo: "https://reindeer-home.netlify.app",
+    github: "https://github.com/emresates/Reindeer",
+  },
+  {
+    id: 4,
+    name: "Wine House Website",
+    description:
+      "Fully responsive cool looking wine page build in Html,Scss and Javascript. It has really smooth scroll animations.",
+    tags: ["html", "responsive", "design"],
+
+    demo: "https://wine-house-page.netlify.app",
+    github: "https://github.com/emresates/Responsive-Wine-House",
+  },
+  {
+    id: 5,
+    name: "Netflix Redesign",
+    description:
+      "Netflix homepage with a great design with many features. I wish Netflix was like this.",
+    tags: ["netflix", "redesign", "features"],
+
+    demo: "https://netflix-home-design.netlify.app/",
+    github: "https://github.com/emresates/Netflix-Redesign",
+  },
+  {
+    id: 6,
+    name: "Portfolio Page",
+    description:
+      "When I started looking for a job, I thought I needed a portfolio page. There is beautiful animations",
+    tags: ["portfolio", "scss", "gsap"],
+
+    demo: "https://emreates-portfolio.netlify.app",
+    github: "https://github.com/emresates/Portfolio",
+  },
+];
