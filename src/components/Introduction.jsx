@@ -16,22 +16,22 @@ const Box = styled(motion.div)`
 
   background: linear-gradient(
         to right,
-        ${(props) => props.theme.body} 50%,
-        ${(props) => props.theme.text} 50%
+        ${(props) => props.theme.text} 50%,
+        ${(props) => props.theme.body} 50%
       )
       bottom,
     linear-gradient(
         to right,
-        ${(props) => props.theme.body} 50%,
-        ${(props) => props.theme.text} 50%
+        ${(props) => props.theme.text} 50%,
+        ${(props) => props.theme.body} 50%
       )
       top;
 
   background-repeat: no-repeat;
   background-size: 100% 2px;
   z-index: 1;
-  border-left: 2px solid ${(props) => props.theme.body};
-  border-right: 2px solid ${(props) => props.theme.text};
+  border-left: 2px solid ${(props) => props.theme.text};
+  border-right: 2px solid ${(props) => props.theme.body};
 `;
 
 const SubBox = styled.div`
@@ -75,6 +75,15 @@ function Introduction() {
       transition={{ type: "spring", duration: 2, delay: 1 }}
     >
       <SubBox>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 2 }}
+        >
+          <img className="picture" src={Me} alt="Profile Pic" />
+        </motion.div>
+      </SubBox>
+      <SubBox>
         <Text
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -84,15 +93,6 @@ function Introduction() {
           <h3>I'm Emre Ates</h3>
           <h6>I design and code simple yet beautiful websites</h6>
         </Text>
-      </SubBox>
-      <SubBox>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 2 }}
-        >
-          <img className="picture" src={Me} alt="Profile Pic" />
-        </motion.div>
       </SubBox>
     </Box>
   );

@@ -10,7 +10,7 @@ import Introduction from "./Introduction";
 
 // Styles
 const MainContainer = styled.div`
-  background: ${(props) => props.theme.body};
+  background: ${(props) => props.theme.text};
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -31,7 +31,7 @@ const Container = styled.div`
 `;
 
 const Contact = styled.a`
-  color: ${(props) => props.theme.text};
+  color: ${(props) => props.theme.body};
   position: absolute;
   top: 2rem;
   right: calc(1rem + 2vw);
@@ -40,7 +40,7 @@ const Contact = styled.a`
 `;
 
 const Blog = styled(NavLink)`
-  color: ${(props) => props.theme.text};
+  color: ${(props) => props.theme.body};
   position: absolute;
   top: 50%;
   right: calc(1rem + 2vw);
@@ -50,7 +50,7 @@ const Blog = styled(NavLink)`
 `;
 
 const Work = styled(NavLink)`
-  color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
+  color: ${(props) => (props.click ? props.theme.text : props.theme.body)};
   position: absolute;
   top: 50%;
   left: calc(1rem + 2vw);
@@ -71,13 +71,13 @@ const BottomBar = styled.div`
 `;
 
 const About = styled(NavLink)`
-  color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
+  color: ${(props) => (props.click ? props.theme.text : props.theme.body)};
   text-decoration: none;
   z-index: 1;
 `;
 
 const Skills = styled(NavLink)`
-  color: ${(props) => props.theme.text};
+  color: ${(props) => props.theme.body};
   text-decoration: none;
   z-index: 1;
 `;
@@ -112,13 +112,15 @@ const Center = styled.button`
   }
   & > :last-child {
     display: ${(props) => (props.click ? "none" : "inline-block")};
-    padding-top: 1rem;
+    padding-top: 2rem;
+    color: #fff;
+    font-size: 20px;
   }
 `;
 
 const DarkDiv = styled.div`
   position: absolute;
-  background-color: #000;
+  background-color: #fff;
   top: 0;
   bottom: 0;
   right: 50%;
@@ -139,14 +141,14 @@ const Main = () => {
       <DarkDiv click={click} />
       <Container>
         <PowerButton />
-        <LogoComponent theme={click ? "dark" : "light"} />
-        <SocialIcons theme={click ? "dark" : "light"} />
+        <LogoComponent theme={click ? "light" : "dark"} />
+        <SocialIcons theme={click ? "light" : "dark"} />
         <Center click={click}>
           <ReactLogo
             onClick={() => handleClick()}
             width={click ? 120 : 250}
             height={click ? 120 : 250}
-            fill="currentColor"
+            fill="#fff"
           />
           <span>Click Here</span>
         </Center>
