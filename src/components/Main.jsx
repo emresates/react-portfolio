@@ -127,7 +127,7 @@ const DarkDiv = styled.div`
   width: ${(props) => (props.click ? "50%" : "0")};
   height: ${(props) => (props.click ? "100%" : "0")};
   z-index: 1;
-  transition: height 0.5s ease, width 1s ease 0.5s;
+  transition: height 0.5s ease , width 1s ease 0.5s;
 `;
 
 // Main Function

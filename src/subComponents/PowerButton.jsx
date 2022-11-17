@@ -11,10 +11,10 @@ const Power = styled.button`
   top: 2rem;
   left: 50%;
   transform: translate(-50%, 0);
-  background-color: #fcf6f4;
+  background-color: transparent;
   padding: 0.3rem;
   border-radius: 50%;
-  border: 1px solid #000;
+  border: none;
   width: 2.5rem;
   height: 2.5rem;
 
@@ -28,7 +28,7 @@ const Power = styled.button`
 
   &:hover {
     background-color: rgba(0, 255, 0, 0.4);
-    box-shadow: 0 0 8px 6px rgba(0, 255, 0, 0.2);
+    box-shadow: 0 0 8px 10px rgba(0, 255, 0, 0.2);
   }
 
   &>*:first-child{
@@ -42,7 +42,7 @@ const PowerButton = () => {
   return (
     <Power>
       <NavLink to="/">
-        <PowerBtn width={30} height={30} fill="currentColor" />
+        <PowerBtn width={30} height={30} fill="#fff" />
       </NavLink>
     </Power>
   );

@@ -39,7 +39,6 @@ const Spaceman = styled(motion.div)`
   }
 `;
 
-// Main function
 const Main = styled(motion.div)`
   border: 2px solid ${(props) => props.theme.text};
   color: ${(props) => props.theme.text};
@@ -56,6 +55,7 @@ const Main = styled(motion.div)`
   position: absolute;
   left: calc(5rem + 5vw);
   top: 10rem;
+  backdrop-filter: blur(2px);
 
   font-family: "Ubuntu Mono", monospace;
   font-style: italic;
@@ -74,6 +74,7 @@ const container = {
   },
 };
 
+// Main function
 const AboutPage = () => {
   return (
     <ThemeProvider theme={darkTheme}>

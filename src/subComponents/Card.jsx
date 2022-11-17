@@ -17,6 +17,7 @@ const Box = styled(motion.li)`
   justify-content: space-between;
   border: 1px solid ${(props) => props.theme.body};
   transition: all 0.2s ease;
+  user-select: none;
 
   &:hover {
     background-color: ${(props) => props.theme.body};
@@ -56,7 +57,7 @@ const Link = styled.a`
   background-color: ${(props) => props.theme.body};
   color: ${(props) => props.theme.text};
   text-decoration: none;
-  padding: 0.5rem calc(2rem + 2vw);
+  padding: 0.5rem calc(1rem + 2vw);
   border-radius: 0 0 0 50px;
   font-size: calc(1rem + 0.5vw);
 
@@ -106,7 +107,7 @@ const Card = (props) => {
       </Tags>
       <Footer>
         <Link href={demo} target="_blank">
-          Visit
+          Visit Site
         </Link>
         <Git href={github} target="_blank">
           <Github width={35} height={35} />

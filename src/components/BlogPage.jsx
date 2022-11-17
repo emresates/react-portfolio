@@ -20,7 +20,7 @@ const MainContainer = styled(motion.div)`
 `;
 
 const Container = styled.div`
-  background-color: ${(props) => `rgba(${props.theme.bodyRgba}, .4)`};
+  background-color: ${(props) => `rgba(${props.theme.bodyRgba}, .2)`};
   width: 100%;
   height: auto;
 
@@ -76,7 +76,7 @@ const BlogPage = () => {
     >
       <Container>
         <LogoComponent />
-        <PowerButton />
+        <PowerButton/>
         <SocialIcons />
         <AnchorComponent numbers={numbers} />
         <Center>

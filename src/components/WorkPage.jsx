@@ -12,8 +12,9 @@ import { motion } from "framer-motion";
 
 // Styles
 const Box = styled.div`
-  background-color: ${(props) => props.theme.body};
-
+  background-image: url("https://img.freepik.com/free-vector/abstract-black-texture-background-hexagon_206725-413.jpg?w=1380&t=st=1668695352~exp=1668695952~hmac=3b96ddae425dc548e9e8f149f6d58cebf23cffe6977a801df541d0d8caa64c1e");
+  background-attachment: fixed;
+  background-size: cover;
   height: 400vh;
   position: relative;
   overflow: hidden;
@@ -35,6 +36,16 @@ const Rotate = styled.span`
   width: 80px;
   height: 80px;
   z-index: 1;
+`;
+const Span = styled.span`
+  display: block;
+  position: fixed;
+  right: 6%;
+  bottom: 5%;
+  z-index: 1;
+  color: white;
+  font-size: 20px;
+  user-select: none;
 `;
 // framer motion
 const container = {
@@ -84,6 +95,9 @@ const WorkPage = () => {
           <YingYang width={80} height={80} fill={darkTheme.text} />
         </Rotate>
         <BigTitle text="WORK" top="10%" right="20%" />
+        <Span>
+          <span>Scroll</span>
+        </Span>
       </Box>
     </ThemeProvider>
   );

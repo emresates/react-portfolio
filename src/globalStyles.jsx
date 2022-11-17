@@ -16,6 +16,10 @@ body {
     overflow-x:hidden;
     font-family: "Source Sans Pro",sans-serif;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
 `;
 
 export default GlobalStyle;
