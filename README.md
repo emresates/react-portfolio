@@ -6,5 +6,7 @@
 
 ### Work page includes some of the projects I have done. Can be enriched with photography. About page has some information about me and the programming languages I use are written on the Skill page. There are posts published on the Blog page, but since I haven't written a post yet, I've used lorem posts and photos. Also, when scrolling, an anchor goes down.
 
+Live: https://react-portfolio-page.netlify.app
+
 https://user-images.githubusercontent.com/84937009/202491490-1ba645a9-682d-404e-86ce-a8d852aae551.mp4
 
