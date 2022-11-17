@@ -49,7 +49,7 @@ const SubBox = styled.div`
   }
 `;
 
-const Text = styled.div`
+const Text = styled(motion.div)`
   font-size: calc(1rem + 1.5vw);
   color: ${(props) => props.theme.body};
   padding: 2rem;
@@ -75,7 +75,11 @@ function Introduction() {
       transition={{ type: "spring", duration: 2, delay: 1 }}
     >
       <SubBox>
-        <Text>
+        <Text
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ type: "spring", duration: 2, delay: 2 }}
+        >
           <h1>Hi,</h1>
           <h3>I'm Emre Ates</h3>
           <h6>I design and code simple yet beautiful websites</h6>

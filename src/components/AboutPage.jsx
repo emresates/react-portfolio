@@ -7,10 +7,13 @@ import { darkTheme } from "./Theme";
 import BigTitle from "../subComponents/BigTitle";
 import astronaut from "../assets/Images/spaceman.png";
 import { motion } from "framer-motion";
+import bgspace from '../assets/Images/space1.jpg'
 
 // Styles
 const Box = styled.div`
-  background-color: ${(props) => props.theme.body};
+  /* background-color: ${(props) => props.theme.body}; */
+  background-image: url(${bgspace})  ;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
   position: relative;
