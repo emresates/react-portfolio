@@ -26,7 +26,7 @@ const Main = styled(motion.div)`
   color: ${(props) => props.theme.text};
   background-color: ${(props) => props.theme.body};
   padding: 2rem;
-  width: 30vw;
+  width: 26vw;
   height: 60vh;
   z-index: 3;
   line-height: 1.5;
@@ -126,9 +126,9 @@ const MySkillPage = () => {
         <SocialIcons theme="light" />
         <PowerButton />
         <Laptop
-          initial={{ width: 0 , opacity:0}}
-          animate={{ width: "2180px" , opacity:1}}
-          transition={{ type:"spring", duration: 2, delay: .4 }}
+          initial={{ width: 0, opacity: 0 }}
+          animate={{ width: "2180px", opacity: 1 }}
+          transition={{ type: "spring", duration: 2, delay: 0.4 }}
         >
           <img src={laptopImg} alt="" />
         </Laptop>
@@ -165,8 +165,8 @@ const MySkillPage = () => {
           <Description>
             <strong>SKILLS</strong>
             <p>
-              Html, Css, Sass, Scss, Javascript, Jquery, React, Redux,
-              Bootstrap, Tailwind, Python, Django
+              Reactjs, Nextjs, Html, Css, Sass, Javascript, Jquery, Redux,
+              Context API, Bootstrap, Tailwind, Material UI, Styled Components
             </p>
           </Description>
           <Description>

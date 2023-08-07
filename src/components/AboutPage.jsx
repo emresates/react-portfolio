@@ -7,12 +7,12 @@ import { darkTheme } from "./Theme";
 import BigTitle from "../subComponents/BigTitle";
 import astronaut from "../assets/Images/spaceman.png";
 import { motion } from "framer-motion";
-import bgspace from '../assets/Images/space1.jpg'
+import bgspace from "../assets/Images/space1.jpg";
 
 // Styles
 const Box = styled.div`
   /* background-color: ${(props) => props.theme.body}; */
-  background-image: url(${bgspace})  ;
+  background-image: url(${bgspace});
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -106,14 +106,18 @@ const AboutPage = () => {
           I'm a front-end developer located in Turkey. I love to create simple
           yet beautiful websites with great user experience.
           <br />
+          As a Frontend Developer who has been continuously improving myself for
+          the past 2 years, along with 7 months of work experience, I have
+          actively worked on projects involving React and JavaScript.
+          Additionally, I have gained experience in the backend side with
+          Node.js and MongoDB.
           <br />
-          I'm interested in the whole frontend stack Like trying new things and
-          building great projects. I am learning new technologies every day on
-          this path that I set out to develop my own movie blog site. With a
-          little enthusiasm, I started to learn and did good things.
-          <br />
-          <br />I believe everything is an Art when you put your consciousness
-          in it. You can connect with me via social links.
+          My project management skills and inclination towards teamwork enable
+          me to work effectively within a collaborative environment to deliver
+          successful projects.I have effectively communicated with our team to
+          understand and address customer needs. I am proficient in both English
+          and Turkish languages, allowing me to communicate seamlessly with
+          clients, team members, and project stakeholders.
         </Main>
         <BigTitle text="ABOUT" top="10%" left="5%" />
       </Box>

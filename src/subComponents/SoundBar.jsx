@@ -75,6 +75,10 @@ function SoundBar() {
       <Line click={click} />
       <Line click={click} />
       <audio src={music} ref={ref} loop />
+
+      <p style={{ color: !click ? "white" : "black", marginLeft: "10px" }}>
+        Click Here
+      </p>
     </Box>
   );
 }

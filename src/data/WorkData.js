@@ -1,62 +1,62 @@
 export const Work = [
   {
+    id: 6,
+    name: "Movie App",
+    description:
+      "An IMDb-style film website where users can create accounts, leave comments, and rate movies. On process...",
+    tags: ["Nextjs", "Scss", "MongoDB"],
+
+    demo: "https://emreates-portfolio.netlify.app",
+    github: "https://github.com/emresates/Portfolio",
+  },
+  {
     id: 1,
     name: "Responsive Travel Agency Page",
     description:
       "It is build on top of the React JS, with Formik and React Router Dom.",
-    tags: ["react", "formik", "react-router-dom"],
+    tags: ["React", "Formik", "React-router-dom"],
 
     demo: "https://trippy-travel-react.netlify.app",
     github: "https://github.com/emresates/React-travel-agency-project",
   },
   {
     id: 2,
-    name: "Movie App",
+    name: "Coffee Shop",
     description:
-      "A Movie App build in Html,Scss and Javascript. With using the TMDB API",
-    tags: ["javascript", "scss", "api"],
+      "A Coffee Shop App build with React. It includes loading effects and small animations.",
+    tags: ["React", "Scss", "Framer Motion"],
 
-    demo: "https://movie-website-tmdb-api.netlify.app",
-    github: "https://github.com/emresates/movie-app-with-api",
+    demo: "https://app.netlify.com/sites/emresates-coffee-shop",
+    github: "https://github.com/emresates/coffee-house",
   },
   {
     id: 3,
-    name: "Winter Resort Website",
+    name: "Music App",
     description:
-      "Winter resort page made by using vanilla.js, html, scss. A good slider and transition effects available for each page. Built from scratch.",
-    tags: ["gsap", "slider", "scss"],
+      "A Spotify-style music application made using React, Tailwind, and APIs.",
+    tags: ["React", "Axios", "Tailwind"],
 
-    demo: "https://reindeer-home.netlify.app",
-    github: "https://github.com/emresates/Reindeer",
+    demo: "https://secenory-music.netlify.app",
+    github: "https://github.com/emresates/React-Music-app",
   },
   {
     id: 4,
-    name: "Wine House Website",
+    name: "Corestudio",
     description:
-      "Fully responsive cool looking wine page build in Html,Scss and Javascript. It has really smooth scroll animations.",
-    tags: ["html", "responsive", "design"],
+      "A photo studio website with various effects, built using React.",
+    tags: ["React", "Formik", "Sass"],
 
-    demo: "https://wine-house-page.netlify.app",
-    github: "https://github.com/emresates/Responsive-Wine-House",
+    demo: "https://corestudio.netlify.app",
+    github: "https://github.com/emresates/React-Photo-Studio",
   },
   {
     id: 5,
     name: "Netflix Redesign",
     description:
       "Netflix homepage with a great design with many features. I wish Netflix was like this.",
-    tags: ["netflix", "redesign", "features"],
+    tags: ["Html", "Scss", "Javascript"],
 
     demo: "https://netflix-home-design.netlify.app/",
     github: "https://github.com/emresates/Netflix-Redesign",
-  },
-  {
-    id: 6,
-    name: "Portfolio Page",
-    description:
-      "When I started looking for a job, I thought I needed a portfolio page. There is beautiful animations",
-    tags: ["portfolio", "scss", "gsap"],
-
-    demo: "https://emreates-portfolio.netlify.app",
-    github: "https://github.com/emresates/Portfolio",
   },
 ];

@@ -91,7 +91,10 @@ function Introduction() {
         >
           <h1>Hi,</h1>
           <h3>I'm Emre Ates</h3>
-          <h6>I design and code simple yet beautiful websites</h6>
+          <h6>
+            I design websites using a component-based approach, utilizing React
+            and Next.js.
+          </h6>
         </Text>
       </SubBox>
     </Box>
